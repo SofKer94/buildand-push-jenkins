@@ -1,6 +1,6 @@
 node {
 
-   def IMAGE="${registryProjet}app:${version}"
+   def IMAGE="${registryProjet}/app:${version}"
 
     stage('Clone') {
           checkout scm
