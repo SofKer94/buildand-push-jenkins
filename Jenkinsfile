@@ -1,7 +1,7 @@
 node {
 
-   def registryProjet='buildjenkins/'
-   def IMAGE="${registryProjet}app:${tag}"
+   def registryProjet='jenkins_sofiane/'
+   def IMAGE="${registryProjet}app:3.9"
 
     stage('Clone') {
           checkout scm
@@ -23,7 +23,7 @@ node {
               img.push()
           }
     }
-   stage('compuse_up') {
+   stage('Compose up') {
        sh 'docker compose up --detach'
     }
 
