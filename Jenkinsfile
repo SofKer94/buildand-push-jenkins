@@ -1,6 +1,5 @@
 node {
 
-   def registryProjet='jenkins_sofiane/'
    def IMAGE="${registryProjet}app:${version}"
 
     stage('Clone') {
